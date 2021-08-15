@@ -1,4 +1,4 @@
-# Final Project
+# Project report
 By : Connor Laughland, Jaehyun Yoon, Stratis Aloimonos
 
 # Introduction
