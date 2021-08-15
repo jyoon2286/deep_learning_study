@@ -110,3 +110,44 @@ comparison purposes. The metrics found from each test can be seen in the table b
 <p align="center">
   <img  width="600" height="400" src=./Dataset/yolo_output.png>
 </p>
+
+# How to Run the Python Script
+
+The main Python script for our project can be found in the “Python Code and Related
+Data” folder and is titled “MSML612_Project_Main Code.py”. The Python script can be run
+directly from the folder and should automatically pull the required source data which is also
+included in the same folder. When opening and running the code in Visual Studio Code, pressing
+“Run” from the top menu and “Start Debugging” should take the user through the entire script.
+Various image plots may pop-up on the screen during the runtime and pause the runtime, but
+runtime will continue when the plots are closed. The final output of the script will be a pop-up of
+a test image with predicted bounding boxes and class-labels layered on top of the image.
+Source data required to run the script which are included in the folder are:<br>
+● File for labels of the 4 classes for the YOLO model - “classes.model”<br>
+● File for the weights for each layer associated with the YOLO model -
+“yolov3_ts_train_5000.weights”<br>
+● File containing the architecture and layers to run the YOLO model -
+“traffic-sign-yolo.cfg”<br>
+● File for the source data for the CNN classification model - “data2.pickle”<br>
+● File containing the 43 class-labels for the CNN classification model -
+“label_names.csv”<br>
+● File used to run the final prediction experiment on both models - “00001.jpg”
+The following Python packages must be installed on the environment to run the script:<br>
+● CV2<br>
+● Pandas<br>
+● Pickle<br>
+● Matplotlib<br>
+● Keras<br>
+The file for pretrained weights for the YOLO model from our training of the YOLO
+model is already included on in the folder with the source data, but the section below details how
+to run the Jupyter Notebook used to run the training of the YOLO model to create the pretrained
+weights.<br>
+The Jupyter Notebook to train the YOLO model to identify optimal model-weights can
+be found in the “Python Code and Related Data” folder and in the
+“MSML612_TrafficYOLO_Weight Training Files” subfolder. The notebook is then titled
+“MSML612_TrafficYOLO_weight.ipynb”. For our model weights, we had to use the cloud
+machine and the Google Colab notebook because of the limitation of GPU and CPU of our
+machine. The link is in the .ipynb file and you can download our datasets and train the weights if
+you need to. The only thing you need to do is change the path for the configuration file to where
+you save the traffic-sign-yolo.cfg file. Once you do that, you can run other cells for converting
+data into YOLO formats, data preparation, and the pre-train model from the darknet Github. The
+final and the best weight file is the yolov3_ts_train_5000.weights.<br>
