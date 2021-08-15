@@ -104,9 +104,9 @@ comparison purposes. The metrics found from each test can be seen in the table b
 
 # Example
 <p align="center">
-  <img  width="600" height="400" src=dataset/00001.jpg>
+  <img  width="600" height="400" src=./Dataset/00001.jpg>
 </p>
 
 <p align="center">
-  <img  width="600" height="400" src=dataset/yolo_output.png>
+  <img  width="600" height="400" src=./Dataset/yolo_output.png>
 </p>
