@@ -1,2 +1,2 @@
-# deep_learning_study
+# deep_learning_projects
 Projects for deep learning study 
